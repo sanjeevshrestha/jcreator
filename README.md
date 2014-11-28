@@ -1,0 +1,5 @@
+jCreator
+========
+
+Joomla Component Creator 
+
