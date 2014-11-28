@@ -1,0 +1,46 @@
+{
+    "name": "sanjeevshrestha/jcreator",
+    "description": "Joomla Component Creator",
+    "keywords": ["joomla", "component creator", "creator"],
+    "homepage": "https://github.com/sanjeevshrestha/jcreator",
+    "license": "Apache-2.0",
+    "support": {
+        "source": "https://github.com/sanjeevshrestha/jcreator",
+        "issues": "https://github.com/sanjeevshrestha/jcreator/issues"
+    },
+    "authors": [
+        {
+            "name": "Sanjeev Shrestha",
+            "email": "mail@sanjeevshrestha.com.np",
+            "homepage": "http://www.sanjeevshrestha.com.np/"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "jcreator": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "jcreator\\buildtools": "build/",
+            "jcreator\\Tests": "Tests/"
+        }
+    },
+    "archive": {
+        "exclude": ["Tests/", "build/", "/.travis.yml", "/build.xml", "phpunit.xml.dist", "jcreator.spec"]
+    },
+    "require": {
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phing/phing": "~2.7",
+        "phpunit/phpunit": "~4.0",
+        "symfony/console": "~2.4",
+        "satooshi/php-coveralls": "~0.6"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    }
+}
